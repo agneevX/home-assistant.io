@@ -117,7 +117,7 @@ Per default the bulb limits the amount of requests per minute to 60, a limitatio
 
 <div class='note'>
 
-Before trying to control your light through Home Assistant, you have to setup your bulb using Yeelight app. ( [Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=fr), [IOS](https://itunes.apple.com/us/app/yeelight/id977125608?mt=8) ).
+Before trying to control your light through Home Assistant, you have to setup your bulb using Yeelight app. ([Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry),[iOS](https://itunes.apple.com/us/app/yeelight/id977125608)).
 In the bulb property, you have to enable "LAN Control" (previously called "Developer mode"). LAN Control may only be available with the latest firmware installed on your bulb.  Firmware can be updated in the application after connecting the bulb.
 Determine your bulb IP (using router, software, ping...).
 Information on how to enable "LAN Control" can be found [here](https://www.yeelight.com/faqs/lan_control).
@@ -141,9 +141,10 @@ This integration is tested to work with the following models. If you have a diff
 | `strip1`   | YLDD02YL     | Lightstrip (Color)                               |
 | ?          | YLDD04YL     | Lightstrip (Color)                               |
 | `bslamp1`  | MJCTD01YL    | Xiaomi Mijia Bedside Lamp - Wi-Fi Version!       |
-| `bslamp1`  | MJCTD02YL    | Xiaomi Mijia Bedside Lamp II                     |
+| `bslamp2`  | MJCTD02YL    | Xiaomi Bedside Lamp II                     |
 | `RGBW`     | MJDP02YL     | Mi LED smart Lamp - white and color Wi-Fi Version|
 | `lamp1`    | MJTD01YL     | Xiaomi Mijia Smart LED Desk Lamp (autodiscovery isn't possible because the device doesn't support mDNS due to the small amount of RAM) |
+| `lamp4`  | MJTD01YL    | Xiaomi Smart LED Desk Lamp 1S                      |
 | `ceiling1` | YLXD01YL     | Yeelight Ceiling Light                           |
 | `ceiling2` | YLXD03YL     | Yeelight Ceiling Light - Youth Version           |
 | ?, may be `ceiling3` | YLXD04YL     | Yeelight Ceiling Light (Jiaoyue 450)   |

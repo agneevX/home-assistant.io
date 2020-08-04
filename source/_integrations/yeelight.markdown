@@ -22,7 +22,7 @@ There is currently support for the following device types within Home Assistant:
 
 <div class='note'>
 
-Before trying to control your light through Home Assistant, you have to setup your bulb using the Yeelight app. ([Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry),[iOS](https://itunes.apple.com/us/app/yeelight/id977125608)).
+Before trying to control your light through Home Assistant, you have to setup your bulb using the Yeelight app. ([Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry), [iOS](https://itunes.apple.com/us/app/yeelight/id977125608)).
 In the bulb property, you have to enable "LAN Control" (previously called "Developer mode"). LAN Control may only be available with the latest firmware installed on your bulb.  Firmware can be updated in the application after connecting the bulb.
 Determine your bulb IP (using router, software, ping...).
 Information on how to enable "LAN Control" can be found [here](https://www.yeelight.com/faqs/lan_control).

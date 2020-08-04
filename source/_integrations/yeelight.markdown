@@ -18,6 +18,17 @@ There is currently support for the following device types within Home Assistant:
 - **Light** - The Yeelight platform for supporting lights.
 - **Sensor** - The Yeelight platform for supporting sensors. Currently only nightlight mode sensor, for ceiling lights.
 
+## Initial setup
+
+<div class='note'>
+
+Before trying to control your light through Home Assistant, you have to setup your bulb using the Yeelight app. ([Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry),[iOS](https://itunes.apple.com/us/app/yeelight/id977125608)).
+In the bulb property, you have to enable "LAN Control" (previously called "Developer mode"). LAN Control may only be available with the latest firmware installed on your bulb.  Firmware can be updated in the application after connecting the bulb.
+Determine your bulb IP (using router, software, ping...).
+Information on how to enable "LAN Control" can be found [here](https://www.yeelight.com/faqs/lan_control).
+
+</div>
+
 ## Example configuration (Automatic)
 
 After the lights are connected to the Wi-Fi network and have been detected in Home Assistant, the discovered names will be shown in the `Light` section of the `Overview` view. Add the following lines to your `customize.yaml` file:
@@ -112,17 +123,6 @@ custom_effects:
 
 Per default the bulb limits the amount of requests per minute to 60, a limitation which can be bypassed by enabling the music mode. In music mode the bulb is commanded to connect back to a socket provided by the integration and it tries to keep the connection open, which may not be wanted in all use-cases.
 **Also note that bulbs in music mode will not update their state to "unavailable" if they are disconnected, which can cause delays in Home Assistant. Bulbs in music mode may also not react to commands from Home Assistant the first time if the connection is dropped. If you experience this issue, turn the light off and back on again in the frontend and everything will return to normal.**
-
-### Initial setup
-
-<div class='note'>
-
-Before trying to control your light through Home Assistant, you have to setup your bulb using Yeelight app. ([Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry),[iOS](https://itunes.apple.com/us/app/yeelight/id977125608)).
-In the bulb property, you have to enable "LAN Control" (previously called "Developer mode"). LAN Control may only be available with the latest firmware installed on your bulb.  Firmware can be updated in the application after connecting the bulb.
-Determine your bulb IP (using router, software, ping...).
-Information on how to enable "LAN Control" can be found [here](https://www.yeelight.com/faqs/lan_control).
-
-</div>
 
 ### Supported models
 
